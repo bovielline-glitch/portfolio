@@ -1,6 +1,6 @@
 #  Senila — Portfolio
 
-Bienvenue sur mon portfolio professionnel.
+Bienvenue sur mon portfolio.
 
 Je suis Bovielline Senila, développeuse informatique passionnée par la création de sites web, d'applications et de solutions numériques modernes.
 
@@ -39,6 +39,7 @@ Je cherche continuellement à améliorer mes compétences et à développer des 
 * Visual Studio Code
 * WordPress
 * WooCommerce
+* spyder
 
 ## 🚀 Projets
 
