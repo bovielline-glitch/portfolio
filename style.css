@@ -60,7 +60,7 @@ button {
   z-index: 1;
 }
 
-/* NAVBAR */
+
 .navbar {
   position: fixed;
   width: min(100% - 48px, 1400px);
@@ -1199,7 +1199,7 @@ footer {
   letter-spacing: .15em;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1000px) {
   .nav-links {
     gap: 16px;
@@ -1465,9 +1465,7 @@ footer {
   }
 }
 
-/* =========================================================
-   LANGUAGE SWITCHER
-========================================================= */
+
 .language-switcher {
   display: flex;
   align-items: center;

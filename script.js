@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /* =========================
-     MOBILE NAVIGATION
-  ========================= */
+
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -15,9 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     NAVBAR ON SCROLL
-  ========================= */
+  
   const navbar = document.querySelector(".navbar");
 
   const updateNavbar = () => {
@@ -27,9 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateNavbar();
   window.addEventListener("scroll", updateNavbar, { passive: true });
 
-  /* =========================
-     ACTIVE SECTION LINK
-  ========================= */
+  
   const sections = document.querySelectorAll("main section[id]");
   const navItems = document.querySelectorAll(".nav-links a");
 
@@ -48,9 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(section => sectionObserver.observe(section));
 
-  /* =========================
-     REVEAL ANIMATIONS
-  ========================= */
+  
   const revealObserver = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -65,9 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
 
-  /* =========================
-     CURSOR GLOW
-  ========================= */
+  
   const cursorGlow = document.querySelector(".cursor-glow");
 
   if (cursorGlow) {
@@ -77,9 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   }
 
-  /* =========================
-     PHOTO CARD TILT
-  ========================= */
+  
   const photoCard = document.querySelector(".photo-card");
 
   if (photoCard && window.matchMedia("(pointer: fine)").matches) {
@@ -96,23 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* =========================
-     SKILL HOVER
-  ========================= */
+  
   document.querySelectorAll(".skill-row").forEach(row => {
     row.addEventListener("mouseenter", () => row.classList.add("hovered"));
     row.addEventListener("mouseleave", () => row.classList.remove("hovered"));
   });
 
-  /* =========================
-     YEAR
-  ========================= */
+  
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
-  /* ======================================================
-     LANGUAGE SWITCHER — FRANÇAIS / ENGLISH
-  ====================================================== */
+  
   const translations = {
     fr: {
       nav: ["Accueil", "À propos", "Compétences", "Projets", "Contact"],
